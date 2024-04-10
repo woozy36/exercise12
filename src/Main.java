@@ -27,8 +27,8 @@ class Queue<E> {
         if (index == 0) {
             throw new StackEmptyException();
         }
-        E returnElement = elements[index - 1];
-        index--;
+        E returnElement = elements[index - 2];
+        index++;
         return returnElement;
     }
 }
